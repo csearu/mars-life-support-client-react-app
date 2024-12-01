@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+mars-life-support-client/
+├── src/
+│   ├── components/
+│   │   ├── Dashboard.js         # Main dashboard component
+│   │   ├── SensorCard.js        # Reusable card component
+│   ├── services/
+│   │   └── api.js               # HTTP service for backend communication
+│   ├── App.js                   # Root component
+│   ├── index.js                 # Entry point
+│   ├── styles/
+│   │   └── App.css              # Global styles
+├── package.json                 # Project dependencies
+└── public/
+    └── index.html               # HTML template
+```

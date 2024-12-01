@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.sensor-card {
+  background: #0a3d62;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.sensor-card .icon {
+  color: #f39c12;
+}
+
+.sensor-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.sensor-card p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #3498db;
+}
