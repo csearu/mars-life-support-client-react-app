@@ -1,6 +1,18 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import PropTypes from "prop-types";
+import {
+  Chart as ChartJS,
+  LineElement,
+  PointElement,
+  LinearScale,
+  CategoryScale,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+// Register required Chart.js components
+ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Title, Tooltip, Legend);
 
 const SensorChart = ({ label, data, color }) => {
   const chartData = {
@@ -31,6 +43,7 @@ const SensorChart = ({ label, data, color }) => {
           display: true,
           text: "Time",
         },
+        type: "category", // Ensure category scale is explicitly specified
       },
       y: {
         title: {
@@ -42,12 +55,6 @@ const SensorChart = ({ label, data, color }) => {
   };
 
   return <Line data={chartData} options={options} />;
-};
-
-SensorChart.propTypes = {
-  label: PropTypes.string.isRequired,
-  data: PropTypes.arrayOf(PropTypes.number).isRequired,
-  color: PropTypes.string.isRequired,
 };
 
 export default SensorChart;
